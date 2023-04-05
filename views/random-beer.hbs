@@ -1,0 +1,16 @@
+{{#each response}}
+  <div>
+    <h2>{{name}}</h2>
+    <p>{{tagline}}</p>
+    <p>{{description}}</p>
+    <img src="{{image_url}}" height="300" alt="Beer {{name}}">
+    <ul>
+      {{#each food_pairing}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+    <p>{{brewers_tips}}</p>
+  </div>
+{{/each}}
